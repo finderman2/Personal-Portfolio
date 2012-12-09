@@ -1,0 +1,15 @@
+# Exclude these files from the git repo
+wp-content/cache/*
+wp-content/plugins/wp-minify/cache/*
+wp-content/upgrade/*
+wp-content/uploads/*
+sitemap.*
+wp-config-local.php
+*.espressostorage
+ 
+# Hidden system files
+*.DS_Store
+*Thumbs.DB
+ 
+# Include these files in previously blocked directories
+!wp-content/uploads/.htaccess
