@@ -1,0 +1,28 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Lead Designer & Developer: Liam O'Brien
+  Site: liamobrien.me
+  Twitter: Finderman2
+  Location: Salisbury CT, 06068
+
+/* THANKS */
+    Special Thanks To:
+    Blank
+
+    And a very special thanks to the people who inspire me, such as:
+    Dan Cederholm,
+    Eric Meyer,
+    Ethan Marcotte,
+    Louie Mantia,
+    Jeremy Keith,
+    A Book Apart,
+    And many more whose names escape me, thank you.		
+
+/* SITE */
+  Standards: HTML5, CSS3, jQuery.
+  Components: HTML5, CSS3, jQuery, HTML5 Boilerplate.
+  Software: Espresso, Textmate, Photoshop CS5, & Safari.
+  Colophon: The text is set in .

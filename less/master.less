@@ -1,0 +1,278 @@
+/*Import All Necessary Files, Note: the order of the files is very important, do not change.*/
+@import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
+@import "base.less";
+@import "flexslider.less";
+
+/* Page Structure
+-------------------------------------------------------------- */
+body {
+    margin: 1em auto;
+    max-width: 980px;
+    background: #4f5763; /*#e9e7e0*/
+    font: normal 100%/1.5 @serif;
+    color: @textcolor; 
+}
+
+.content {
+    padding: 2em;
+    background: @white;
+    .drop-shadow(0, 2px, 2px, .15);
+}
+
+.full-width {
+    max-width: 107%;
+    margin: 1.5em 0 1.5em -2em;
+}
+
+.full-width.alt {
+    margin: 1.5em -2em 1.5em 0;
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*------------ Header ------------*/
+header {
+    margin: 0 0 2.5em;
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+    float: left;
+}
+
+.logo a {
+    color: @headingcolor;
+    border: none;
+}
+
+.logo a:hover {
+    color: @salmon;
+}
+
+.tagline {
+    margin: 0;
+    font-size: .85em;
+    color: @grey;
+}
+
+/*--- Navigation ---*/
+#primary {
+    float: right;
+    font-family: @sans-serif;
+}
+
+#primary ul {
+    padding: 0;
+    margin: 0;
+}
+
+#primary li {
+    padding: 0 1em;
+}
+
+/* Main Styles
+-------------------------------------------------------------- */
+#intro {
+   .island(62%, 2em 1.5em 1em 0, left); 
+}
+
+#contact {
+    .island(35%, 2em 0 1em 0, left);
+}
+
+
+#project-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#project-container li {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.rounded-item a {border: none;}
+
+.rounded-item img {
+    .rounded(50%);
+    opacity: .7;
+}
+
+.rounded-item img:hover {
+    opacity: 1;
+}
+
+/*------------ Portfolio ------------*/
+/*Full width images with descriptions*/
+.project-item {
+    margin: 2.5em 0;
+}
+
+.project-item:first-child {
+    margin: 0;
+}
+
+.title {
+    margin: .4em 0;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 1em;
+    color: lighten(@darkgrey, 18%);
+}
+
+/*------------ Blog ------------*/
+.blog-tagline {
+    margin: 1em 0;
+    padding: 1em 0;
+    border-top: 4px double @lightgrey;
+    border-bottom: 4px double @lightgrey;
+    font-family: @serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.post {
+	margin-bottom: 1.25em;
+}
+
+
+article aside {
+	font-size: .8125em;
+	line-height: @baselineheight;
+	color: @grey;
+}
+
+.post ul {
+    list-style: none;
+    padding: 0;
+}
+
+.post p {
+	margin: 1em 0 1.25em 0;
+}
+
+.commentlist {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0;
+}
+
+.comment {
+    margin: 2em 0;
+}
+
+.avatar {
+    float: left;
+    margin: -2% 3% 0 0;
+    .rounded(50%);
+}
+
+.author {
+    display: inline-block;
+    border-bottom: 1px solid @grey;
+}
+
+.comment-permalink {
+    display: block;
+    border: none;
+}
+
+/*------------ Contact ------------*/
+input.append,
+.cf-field-3,
+.cf-field-2 {
+    float: left;
+    margin-right: 1.5em;
+}
+
+form .full-field {
+    width: 74%;
+}
+
+.no-placholder input, .no-placholder .hide {
+    display: block;
+    float: none;
+}
+
+.cf-ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reqtxt,.emailreqtxt {
+    text-align: right;
+    font-size: .7em;
+}
+
+.cf-sb {
+    margin: 0;
+}
+
+.cf_hidden,.linklove {
+    display: none;
+    background: none;
+}
+
+.sendbutton {
+    .btn;
+    .btn.green;
+}
+
+/*------------ Footer ------------*/
+footer {
+    color: rgba(255, 255, 255, .45);
+    text-align: center;
+}
+
+footer a {
+    color: @white;
+}
+
+footer a:hover {
+    color: #4d9fe3;
+}
+
+/* Media Queries
+-------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+	body {
+	    margin: 0 auto;
+	}
+	
+	#primary, header hgroup, header {
+		float: none;
+		margin: 0;
+	}
+	
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 20em) {
+	#intro,#process,#contact {
+	    .island(100%, .5em 0, none);
+	}
+	
+	.content {
+	    padding: .85em;
+	}
+	
+	#primary li {
+	    padding: 0 .5em 0 0;
+	}
+}
